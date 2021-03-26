@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEA1E511-ECFB-4473-B9A0-2ECCF401A5AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Escolar</RootNamespace>
+    <AssemblyName>Escolar</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\globales.cs" />
+    <Compile Include="Formas\frmacercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmacercade.designer.cs">
+      <DependentUpon>frmacercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmalumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmalumnos.designer.cs">
+      <DependentUpon>frmalumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmasignacionmaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmasignacionmaestro.Designer.cs">
+      <DependentUpon>frmasignacionmaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmauditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmauditoria.designer.cs">
+      <DependentUpon>frmauditoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmboletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmboletas.designer.cs">
+      <DependentUpon>frmboletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmcargameteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmcargameteria.Designer.cs">
+      <DependentUpon>frmcargameteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmcatalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmcatalogos.Designer.cs">
+      <DependentUpon>frmcatalogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmdatosgen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmdatosgen.designer.cs">
+      <DependentUpon>frmdatosgen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmcalificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmcalificaciones.designer.cs">
+      <DependentUpon>frmcalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmevaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmevaluacion.Designer.cs">
+      <DependentUpon>frmevaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmlistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmlistas.designer.cs">
+      <DependentUpon>frmlistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmlocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmlocalidad.designer.cs">
+      <DependentUpon>frmlocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmlogin.designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmmaestros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmmaestros.designer.cs">
+      <DependentUpon>frmmaestros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmmaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmmaterias.designer.cs">
+      <DependentUpon>frmmaterias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmmejoresalumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmmejoresalumnos.designer.cs">
+      <DependentUpon>frmmejoresalumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmmenu.designer.cs">
+      <DependentUpon>frmmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmregistrousuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmregistrousuarios.designer.cs">
+      <DependentUpon>frmregistrousuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmreporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmreporte.Designer.cs">
+      <DependentUpon>frmreporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmrespaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmrespaldo.designer.cs">
+      <DependentUpon>frmrespaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\frmlistasalumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\frmlistasalumnos.Designer.cs">
+      <DependentUpon>frmlistasalumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\alumnosporgrado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>alumnosporgrado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\alumnospormateria.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>alumnospormateria.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\localidadesporclave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>localidadesporclave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\localidadespornombre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>localidadespornombre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\maestrosporclave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>maestrosporclave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\maestrospornombre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>maestrospornombre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\materiasporclave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>materiasporclave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\materiasporgrado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>materiasporgrado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\materiaspornombre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>materiaspornombre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\reportetodousuario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportetodousuario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\reporteusuarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporteusuarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\todosalumnos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>todosalumnos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formas\frmacercade.resx">
+      <DependentUpon>frmacercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmalumnos.resx">
+      <DependentUpon>frmalumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmasignacionmaestro.resx">
+      <DependentUpon>frmasignacionmaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmauditoria.resx">
+      <DependentUpon>frmauditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmboletas.resx">
+      <DependentUpon>frmboletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmcargameteria.resx">
+      <DependentUpon>frmcargameteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmcatalogos.resx">
+      <DependentUpon>frmcatalogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmdatosgen.resx">
+      <DependentUpon>frmdatosgen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmcalificaciones.resx">
+      <DependentUpon>frmcalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmevaluacion.resx">
+      <DependentUpon>frmevaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmlistas.resx">
+      <DependentUpon>frmlistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmlocalidad.resx">
+      <DependentUpon>frmlocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmmaestros.resx">
+      <DependentUpon>frmmaestros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmmaterias.resx">
+      <DependentUpon>frmmaterias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmmejoresalumnos.resx">
+      <DependentUpon>frmmejoresalumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmmenu.resx">
+      <DependentUpon>frmmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmregistrousuarios.resx">
+      <DependentUpon>frmregistrousuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmreporte.resx">
+      <DependentUpon>frmreporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmrespaldo.resx">
+      <DependentUpon>frmrespaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\frmlistasalumnos.resx">
+      <DependentUpon>frmlistasalumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\alumnosporgrado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>alumnosporgrado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\alumnospormateria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>alumnospormateria.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\localidadesporclave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>localidadesporclave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\localidadespornombre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>localidadespornombre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\maestrosporclave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>maestrosporclave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\maestrospornombre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>maestrospornombre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\materiasporclave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>materiasporclave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\materiasporgrado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>materiasporgrado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\materiaspornombre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>materiaspornombre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\reportetodousuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportetodousuario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\reporteusuarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporteusuarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\todosalumnos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>todosalumnos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
